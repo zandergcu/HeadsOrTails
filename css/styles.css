@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+}
+
+.algorithm {
+    width: 30%;
+    border: 1px solid black;
+    display: block;
+    min-height: 280px;
+    margin: 0 auto;
+}
+
