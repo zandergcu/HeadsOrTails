@@ -16,8 +16,16 @@
         
         
         <section class="algorithm">
-            <h1 class="title">Hit the button</h1>
-            <p class="desc">Heads or Tails</p>
+            <h1 class="title">Pick Carefully</h1>
+            
+            <input type="radio" name="option" id="Heads" value="Heads" onchange=displayChoice("h")> Heads
+            <input type="radio" name="option" id="Tails" value="Tails" onchange=displayChoice("t")> Tails 
+            
+            <br />
+            <br />
+            <p>You have chosen: </p><p id="choice"></p><p>Are you sure?</p>
+            <br />
+            
             
             
                 
