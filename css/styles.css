@@ -6,7 +6,7 @@ body {
     width: 100%;
 }
 
-.algorithm {
+.game {
     width: 30%;
     border: 1px solid black;
     display: block;
@@ -14,6 +14,18 @@ body {
     margin: 0 auto;
 }
 
-.resultHeader{
-    
+
+
+#WL{
+    width:100%;
+    height:100px;
+    background: white;
 }
+
+
+
+#hide2,
+#hide3{
+    display: none;
+}
+

@@ -15,24 +15,32 @@
         
         
         
-        <section class="algorithm">
-            <h1 class="title">Pick Carefully</h1>
-            
-            <input type="radio" name="option" id="Heads" value="Heads" onchange=displayChoice("h")> Heads
-            <input type="radio" name="option" id="Tails" value="Tails" onchange=displayChoice("t")> Tails 
-            
-            <br />
-            <br />
-            <p>You have chosen: </p><p id="choice"></p><p>Are you sure?</p>
-            <br />
-            
-            
-            
+        <section class="game">
+            <div id="hide1">
+                <h1 class="title">Pick Carefully</h1>
                 
-                <button type="button" class="submitBtn" onClick="preSpin()">Go!</button>
+                <input type="radio" name="option" id="Heads" value="Heads" onchange=displayChoice("h")> Heads
+                <input type="radio" name="option" id="Tails" value="Tails" onchange=displayChoice("t")> Tails 
+                
+                <br />
+                <br />
+            </div>
+            <div id="hide2">
+                <p>You have chosen: </p><p id="choice"></p>
+                <br />
+                    
+                <button type="button" id="submitBtn" onClick="preSpin()">Go!</button>
+            </div>
+            <div id="hide3">
+                
+                <h2 class="resultHeader">Result:</h2>
+                <p class="result" id="Result"></p>
+                <div id="WL">
+                    <button type="button" id="playAgain" onClick="playAgain()">Play Again</button>
+                </div>
+            </div>
             
-            <h2 class="resultHeader">Result:</h2>
-            <p class="result" id="Result"></p>
+            
         </section>
     
     </div>

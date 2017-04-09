@@ -1,7 +1,6 @@
 
-
-
 function displayChoice(choice){
+    document.getElementById("hide2").style.display = "block";
     if (choice == "h"){
         document.getElementById("choice").innerHTML = "Heads";
     }
@@ -33,9 +32,10 @@ function preSpin() {        //LOCK IN THE USERS ANSWER
 
 
 function spin(){
-    console.log(choice);
+    
+    
     var num = Math.floor(Math.random() * 10) + 1;  //RANDOM NUMBER 1-10
-    console.log(num);  
+     
     if (num < 5){ 
         side = "Heads";     //1-5 HEADS
     } else {
@@ -47,21 +47,24 @@ function spin(){
 }
 
 
-//CANT GET choice TO HERE. SO THE ELSE KEEPS GETTING TRIGGERED. HELPPPP. SOMETHING TO DO WITH .CHECKED AT TOP.
-
 function result(){
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("submitBtn").style.display = "none";
+    document.getElementById("hide3").style.display = "block";
     if(choice == "Heads" && side == "Heads"){
-        console.log("Winner Winner Chicken Dinner!");
+        document.getElementById("WL").style.background = 'green';
     }
     else if(choice == "Tails" && side == "Tails"){
-        console.log("Winner Winner Chicken Dinner!");
+        document.getElementById("WL").style.background = 'green';
     }
     else{
-        console.log("Ouch!");
+        document.getElementById("WL").style.background = 'red';
     }
 }
 
-
+function playAgain(){
+    location.reload();
+}
 
 
 
